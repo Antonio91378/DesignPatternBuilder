@@ -1,0 +1,15 @@
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\bin\Debug\net6.0\NotaFiscal.exe
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\bin\Debug\net6.0\NotaFiscal.deps.json
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\bin\Debug\net6.0\NotaFiscal.runtimeconfig.json
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\bin\Debug\net6.0\NotaFiscal.dll
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\bin\Debug\net6.0\NotaFiscal.pdb
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.csproj.AssemblyReference.cache
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.AssemblyInfoInputs.cache
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.AssemblyInfo.cs
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.csproj.CoreCompileInputs.cache
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.dll
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\refint\NotaFiscal.dll
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.pdb
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\NotaFiscal.genruntimeconfig.cache
+C:\Users\antonio.dias\Desktop\me\Projects_Alura\NotaFiscal\NotaFiscal\obj\Debug\net6.0\ref\NotaFiscal.dll

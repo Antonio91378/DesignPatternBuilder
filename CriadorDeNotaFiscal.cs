@@ -9,33 +9,42 @@ namespace NotaFiscal
     public class CriadorDeNotaFiscal
     {
         public DateTime Data { get; set; }
-        public string Cnpj { get;private set; }
-        public string RazaoSocial{ private get; set; }
+        public string Cnpj { get; private set; }
+        public string RazaoSocial { private get; set; }
         public string Observacoes { private get; set; }
         private double valorTotal;
         private double impostos;
         private List<ItemDaNota> todosItens = new List<ItemDaNota>();
-        public void ParaEmpresa(string razaoSocial)
+        public NotaFiscal Constroi()
+        {
+            return new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, todosItens, Observacoes);
+        }
+        public CriadorDeNotaFiscal ParaEmpresa(string razaoSocial)
         {
             this.RazaoSocial = razaoSocial;
+            return this;
         }
-        public void ComCnpj(string cnpj)
+        public CriadorDeNotaFiscal ComCnpj(string cnpj)
         {
             this.Cnpj = cnpj;
+            return this;
         }
-        public void comItem(ItemDaNota item)
+        public CriadorDeNotaFiscal ComItem(ItemDaNota item)
         {
             todosItens.Add(item);
             valorTotal += item.Valor;
             impostos += item.Valor * 0.05;
+            return this;
         }
-        public void ComObservacoes(string observacoes)
+        public CriadorDeNotaFiscal ComObservacoes(string observacoes)
         {
             this.Observacoes = observacoes;
+            return this;
         }
-        public  void NaDataAtual()
+        public CriadorDeNotaFiscal NaDataAtual()
         {
             this.Data = DateTime.Now;
+            return this;
         }
     }
 }
