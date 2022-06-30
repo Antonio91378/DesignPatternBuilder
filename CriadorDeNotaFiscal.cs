@@ -15,9 +15,24 @@ namespace NotaFiscal
         private double valorTotal;
         private double impostos;
         private List<ItemDaNota> todosItens = new List<ItemDaNota>();
+        private List<AcoesPosCriacaoDeNota> acoes = new List<AcoesPosCriacaoDeNota>();
         public NotaFiscal Constroi()
         {
-            return new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, todosItens, Observacoes);
+            if (Data == null)
+            {
+                Data = DateTime.Now;
+            }
+            NotaFiscal nf = new NotaFiscal(RazaoSocial, Cnpj, Data, valorTotal, impostos, todosItens, Observacoes);
+
+            foreach (var acao in acoes)
+            {
+                acao.acao(nf);
+            }
+            return nf;
+        }
+        public void AdicionaAcao(AcoesPosCriacaoDeNota novaAcao)
+        {
+            acoes.Add(novaAcao);
         }
         public CriadorDeNotaFiscal ParaEmpresa(string razaoSocial)
         {
@@ -41,9 +56,9 @@ namespace NotaFiscal
             this.Observacoes = observacoes;
             return this;
         }
-        public CriadorDeNotaFiscal NaDataAtual()
+        public CriadorDeNotaFiscal NaData(DateTime data)
         {
-            this.Data = DateTime.Now;
+            this.Data = data;
             return this;
         }
     }
